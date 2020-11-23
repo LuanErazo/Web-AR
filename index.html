@@ -4,22 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Web AR</title>
     <!-- Import the component -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script type="module" src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div style="width: 100vw; height: 100vh;">
-        <style>
-            model-viewer#reveal {
-                --poster-color: transparent;
-            }
-        </style>
-        <img src="img/scene.jpg" height="100%" alt="" style="position: absolute;">
-        <model-viewer id="reveal" loading="eager" camera-controls auto-rotate poster="../../assets/poster-shishkebab.png" src="../../shared-assets/models/shishkebab.glb" alt="A 3D model of a shishkebab"></model-viewer>
+
+    <div class="room">
+        <model-viewer src="./img/Lamp 25percent.glb" camera-controls shadow-intensity="1" ar-scale="0.2">
     </div>
+
 </body>
 
 </html>
