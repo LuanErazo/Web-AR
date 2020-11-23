@@ -13,9 +13,9 @@ body{
   model-viewer {
     /* background-color: #eee; */
     /* background-image: url(./img/scene.jpg); */
-    position: relative;
-    margin-top: 420px;
-    margin-left: 100px;
+    /* position: relative; */
+    margin-top: 20%;
+    margin-left: 10%;
     background-size: cover;
     --poster-color: #eee;
     height: 30vh;
